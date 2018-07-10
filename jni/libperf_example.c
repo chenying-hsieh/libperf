@@ -42,7 +42,6 @@ main(int argc, char *argv[])
   fprintf(stdout, "counter read: %" PRIu64 "\n", counter);                   /* printout */
 
   FILE *log = libperf_getlogger(pd);                                         /* get log file stream */
-
   fprintf(log, "custom log message\n");                                      /* print a custom log message */
 
   libperf_finalize(pd, 0);                                                   /* log all counter values */
