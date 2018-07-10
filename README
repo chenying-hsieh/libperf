@@ -22,7 +22,8 @@ Introduction            ..................................... [INTRO-1]
 Dependencies            ..................................... [DEPEN-2]
 Building                ..................................... [BUILD-3]
 Using the Library       ..................................... [USING-4]
-License                 ..................................... [LICEN-5]
+Android                 ..................................... [ANDRO-5]
+License                 ..................................... [LICEN-6]
 
 
 
@@ -155,9 +156,14 @@ which tells us to do:
      gcc -I/usr/local/include/perf -I/usr/local/lib/perf/include -L/usr/local/lib -lperf example.c
 
 
+[ANDRO-5] 
+     
+     make
+     adb push ./libs/arm64-v8a/perf_example /path_to_your_dir
+     adb push ./libs/arm64-v8a/perf_test /path_to_your_dir
+     
 
-
-[LICEN-5] License
+[LICEN-6] License
 --------------------------------------------------------------------------------
 libperf is licensed under the GPLv2 because it includes GPLv2 licensed code from
 the perf tool and perf counters subsystem included in the Linux Kernel source
